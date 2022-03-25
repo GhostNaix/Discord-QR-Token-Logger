@@ -37,3 +37,12 @@ if Chrome crashes,
 ## Any Extra Help!
 
 Join the Support Discord Server: https://discord.gg/a24Sp9bEXu 
+
+## How it works
+1. The python script opens a window into https://discord.com/login
+2. The script converts the QR code on the website and downloads the image (contain a one time link that will allow login to a specfic request, from a specific browser, from a specfic IP address to log in), (The browser information, IP address, is not exposed in the QR code) - Correct me if I'm wrong
+3. The script combines the QR code with the template
+4. When the target scan the QR code logging in Discord will send data authenticating the browser in the QR which is the QR code in the template
+5. The browser is refreshed on sucessful login and the token is extracted from the login the script detects this and logs it.
+6. Done pretty much
+7. (Optional) Sends it of the webhook of your choice
